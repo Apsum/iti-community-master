@@ -60,18 +60,18 @@ Le inputs son créés à partir du composant `nz-form-item` de la ui library [ng
 
 #### Level I
     
-1. Terminer le formulaire pour l'ajout d'un utilisateur
-2. Rendre le username et le mot de passe obligatoires
-3. En cas de succès, rediriger l'utilisateur sur /splash/login
+1. Terminer le formulaire pour l'ajout d'un utilisateur  FINI
+2. Rendre le username et le mot de passe obligatoires FINI
+3. En cas de succès, rediriger l'utilisateur sur /splash/login FINI 
 
 #### Level II
 
-4. Afficher les messages d'erreurs de validations
+4. Afficher les messages d'erreurs de validations A FINIR 
     > Utiliser la propriété `nzErrorTip` sur le composant `nz-form-control`
     ```html
     <nz-form-control nzErrorTip="Message de validation">
     ```
-5. Vérifier si le username est disponible. Informer l'utilisateur de l'indisponibilité d'un username.
+5. Vérifier si le username est disponible. Informer l'utilisateur de l'indisponibilité d'un username. A FAIRE 
     > Utiliser le la méthode `exists` sur la classe `UserQueries`
 
 ### Sign In
@@ -82,14 +82,14 @@ Le clic sur le bouton "Connexion" permet de soumettre le formulaire en appelant 
 
 #### Level I
 
-1. Faire le formulaire de sign in
-2. Rendre le username et le mot de passe obligatoires
-3. Rediriger l'utilisateur sur "/" en cas de succès
+1. Faire le formulaire de sign in FINI 
+2. Rendre le username et le mot de passe obligatoires FINI 
+3. Rediriger l'utilisateur sur "/" en cas de succès FINI 
 
 #### Level II
 
-4. Afficher les messages d'erreurs de validation pour chaque champs
-5. Afficher un message si le login a échoué
+4. Afficher les messages d'erreurs de validation pour chaque champs FINI 
+5. Afficher un message si le login a échoué A FAIRE 
     > Vous pouvez utiliser le `NzMessageService` pour afficher des messages
 
 ### Room
@@ -100,16 +100,16 @@ Un utilisateur doit en amont avoir sélectionné une room pour pouvoir y poster 
 
 #### Level I
 
-1. Afficher la liste des rooms dans le menu
+1. Afficher la liste des rooms dans le menu FINI 
     > `src/modules/room/room-menu`
 
     > Utiliser la directive ngFor pour itérer sur les rooms et afficher leurs noms
 
-2. Pouvoir naviguer vers room au clic dans le menu
+2. Pouvoir naviguer vers room au clic dans le menu FINI 
 
 #### Level II
 
-3. Pouvoir ajouter une nouvelle room
+3. Pouvoir ajouter une nouvelle room FINI 
     > Dans `src/modules/room/room-menu`
 
     > Appeler la méthode open du composant `app-room-create-modal` au clic du bouton "+"
@@ -126,11 +126,11 @@ Un utilisateur doit en amont avoir sélectionné une room pour pouvoir y poster 
     ```
     > Lors de la validation du formulaire, la méthode ```onOk``` sera invoquée (tel que configuré sur le composant `nz-modal`)
 
-4. Sélectionner par défaut la première room de la liste
+4. Sélectionner par défaut la première room de la liste A FAIRE
     > Rediriger vers la première room si il n'y a pas de roomId dans le store. 
     > Tester `this.feedStore.value.roomId`
   
-5. Ajouter ajouter les nouvelles rooms créées dynamiquement
+5. Ajouter ajouter les nouvelles rooms créées dynamiquement FINI 
 
 #### Level III
 6. Sélectionner par défaut la dernière room visité par l'utilisateur en stockant l'information dans le [localStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage)
@@ -138,10 +138,10 @@ Un utilisateur doit en amont avoir sélectionné une room pour pouvoir y poster 
 ### Post
 
 ### Level I
-1. Pouvoir rédiger et envoyer un post
+1. Pouvoir rédiger et envoyer un post A FINIR 
     > `src/modules/input/components/feed-input`
 
-2. Afficher les posts reçues dans la room
+2. Afficher les posts reçues dans la room FINI 
     > `src/modules/feed/components/feed`
 3. Afficher le nom de l'auteur des messages
 4. Afficher la photo de l'auteur des messages
@@ -165,9 +165,9 @@ Un utilisateur doit en amont avoir sélectionné une room pour pouvoir y poster 
 
 ### Level I
 
-1. Afficher la photo de l'utilisateur connecté
-2. Pouvoir éditer le profile de l'utilisateur: son username et sa photo en cliquant sur le bouton dédié
-3. Pouvoir se déconnecter de l'application encliquant sur le bonton rouge de logout. Rediriger l'utilisateur vers le /splash/login
+1. Afficher la photo de l'utilisateur connecté A FAIRE 
+2. Pouvoir éditer le profile de l'utilisateur: son username et sa photo en cliquant sur le bouton dédié FINI 
+3. Pouvoir se déconnecter de l'application encliquant sur le bonton rouge de logout. Rediriger l'utilisateur vers le /splash/login FINI 
 
 ### Notifications
 
